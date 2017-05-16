@@ -1,0 +1,18 @@
+{
+    "lstbirthdayinfo":
+     {      "userName":"Archana vadkar",
+            "designation":"Vice president",
+            "village":"Deulwada",
+            "tehsil":" Malwan",
+            "politicalParty":"MNS",
+            "email":"Avadkar@gmail.com",
+            "phoneNumber":"8080808080",
+            "phoneNumber1":"8080808080",
+
+         "location":
+                {
+                    "city" : "Kolhapur",
+                    "state" : "Maharastra"
+                 }
+     }
+}

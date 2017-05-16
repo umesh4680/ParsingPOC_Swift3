@@ -1,0 +1,17 @@
+{
+    "lstbirthdayinfo":
+                    [
+                     {"UserName":"Archana vadkar","Designation":"Vice president","Village":"Deulwada","Tehsil":" Malwan","PoliticalParty":"MNS","Email":"Avadkar@gmail.com","PhoneNumber":"8080808080","location":
+                     {
+                     "city" : "Kolhapur",
+                     "state" : "Maharastra"
+                     }
+                        },
+                     {"UserName":"Sharad karmarkar","Designation":"President","Village":"Mond","Tehsil":"Devgad","PoliticalParty":"Shivsena","Email":"Dkulkarni@gmail.com","PhoneNumber":"9854561230","location":
+                     {
+                     "city" : "Pune",
+                     "state" : "Maharastra"
+                     }
+                        }
+                    ]
+}
