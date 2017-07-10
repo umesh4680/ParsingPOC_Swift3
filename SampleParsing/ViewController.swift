@@ -56,10 +56,27 @@ class SafeJsonObject: NSObject {  /// Keep This as it is
 class Location: NSObject {  // Add your fileds
     var city:String?
     var state:String?
-
+    
+    var coordinates:Coordinate?
+    override func setValue(_ value: Any?, forKey key: String) {
+        if key == "coordinates" // replace Location With ypur key later
+        {
+            coordinates = Coordinate()
+            coordinates?.setValuesForKeys(value as! [String:AnyObject])
+        }
+        else
+        {
+            super.setValue(value, forKey: key)
+        }
+    }
 }
 
 
+class Coordinate: NSObject {  // Add your fileds
+    var lat:String?
+    var long:String?
+    
+}
 
 
 class ViewController: UIViewController {
@@ -77,7 +94,7 @@ class ViewController: UIViewController {
 
         //==== Simple JSON Parse json1 file
 
-        /*
+        
          
         if let path = Bundle.main.path(forResource: "json1", ofType: "json")
         {
@@ -108,6 +125,10 @@ class ViewController: UIViewController {
                     }
 
                     
+                    print("Location Details = \(String(describing: post.location?.coordinates?.lat))")
+                    print("Location Details = \(String(describing: post.location?.coordinates?.long))")
+
+                    
                     posts = [post]
 
                 }
@@ -120,8 +141,14 @@ class ViewController: UIViewController {
             }
         }
         
-            */
+ 
         
+        
+        
+        
+        
+      /*
+    
         
         //==== Simple JSON Parse json file
 
@@ -175,6 +202,10 @@ class ViewController: UIViewController {
                 print("Error = \(err)")
             }
         }
+        
+        
+        
+        */
         
     }
 

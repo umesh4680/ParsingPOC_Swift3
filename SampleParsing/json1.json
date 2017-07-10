@@ -12,7 +12,12 @@
          "location":
                 {
                     "city" : "Kolhapur",
-                    "state" : "Maharastra"
+                    "state" : "Maharastra",
+                    "coordinates" :
+                    {
+                        "lat" : "123",
+                        "long" : "345"
+                    }
                  }
      }
 }
